@@ -33,8 +33,11 @@ def get_k2(phi_n, w_n, h, f):
 
 def rk2_step(phi_n, w_n, h, f):
     k2 = get_k2(phi_n, w_n, h, f)
-    phi_n1 = phi_n + k2[0] * h
-    w_n1 = w_n + k2[1] * h
+    phi_n1 = phi_n + k2[0] #* h
+    w_n1 = w_n + k2[1] #* h
+    '''
+    en las líneas 37 y 38 se multiplicó por h una vez de más
+    '''
     return phi_n1, w_n1
 
 N_steps = 40000
