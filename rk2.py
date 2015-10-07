@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 '''
-Este script resuelve el pendulo simple usando RK2.
+Corrección de rk2
 '''
 
 import numpy as np
