@@ -16,7 +16,7 @@ plt.clf()
 
 t = np.linspace(0, 5 * 2 * np.pi / w, 400)
 
-plt.plot(t, A * np.sin(w * t))
+plt.plot(t, A * np.cos(w * t)) #cambio de sen() por cos() 
 
 
 def f(phi, w):
